@@ -1,0 +1,14 @@
+bob/code/generator/core/Description.class
+bob/code/generator/example/ModelAnalysisExample.class
+bob/code/generator/core/entity/Attribute.class
+bob/code/generator/example/model/Bob.class
+bob/code/generator/core/StandExecutor.class
+bob/code/generator/core/Command.class
+bob/code/generator/example/EasyExample.class
+bob/code/generator/terminus/PeoplePO.class
+bob/code/generator/core/command/AnalysisCommand.class
+bob/code/generator/core/CommandExecutor.class
+bob/code/generator/utils/FileUtils.class
+bob/code/generator/Application.class
+bob/code/generator/core/CommandContext.class
+bob/code/generator/core/configure/ConfigurationSingleton.class

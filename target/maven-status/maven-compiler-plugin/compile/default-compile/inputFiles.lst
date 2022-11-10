@@ -1,0 +1,14 @@
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/Description.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/StandExecutor.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/CommandContext.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/entity/Attribute.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/configure/ConfigurationSingleton.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/terminus/PeoplePO.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/example/EasyExample.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/Application.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/CommandExecutor.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/Command.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/example/ModelAnalysisExample.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/core/command/AnalysisCommand.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/example/model/Bob.java
+/Users/muchun/Documents/java/code-generator/src/main/java/bob/code/generator/utils/FileUtils.java
