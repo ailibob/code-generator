@@ -1,0 +1,34 @@
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import io.terminus.api.ApiBean;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+/**
+* @author Big Joe
+* @date Sat Nov 12 12:01:58 CST 2022
+* description:
+**/
+@EqualsAndHashCode(callSuper = true)
+@Data
+@ApiModel("Bob 的 description")
+@NoArgsConstructor
+@AllArgsConstructor
+public class BobTO extends ApiBean {
+    private static final long serialVersionUID = 1L;
+
+        @ApiModelProperty("age 的 description")
+        private Integer age;
+        @ApiModelProperty("name 的 description")
+        private String name;
+        @ApiModelProperty("weight 的 description")
+        private String weight;
+        @ApiModelProperty("height 的 description")
+        private String height;
+        @ApiModelProperty("length 的 description")
+        private Integer length;
+}

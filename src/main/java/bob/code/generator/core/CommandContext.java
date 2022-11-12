@@ -1,23 +1,38 @@
 package bob.code.generator.core;
 
 import bob.code.generator.core.entity.Attribute;
+import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
+@Data
 public class CommandContext {
-    private Map<String, List<Attribute>> attributesMap;
-    public static volatile ThreadLocal<CommandContext> context;
+    /**
+     * 属性集合
+     */
+    private List<Attribute> attributes;
+    /**
+     * 类名
+     */
+    private String className;
+    /**
+     * 类描述
+     */
+    private String classDescription;
 
-    public static CommandContext getThreadLocal() {
-        if (context != null){
+    public static volatile ThreadLocal<CommandContext> context = new ThreadLocal<>();
+
+    public static CommandContext getCommandContext() {
+        if (context.get() != null){
             return context.get();
         }
         synchronized (CommandContext.class){
-            if (context != null){
+            if (context.get() != null){
                 return context.get();
             }
             CommandContext commandContext = new CommandContext();
+            commandContext.setAttributes(new ArrayList<>());
             context.set(commandContext);
             return context.get();
         }
