@@ -4,17 +4,17 @@ import bob.code.generator.core.Description;
 import lombok.Data;
 
 @Data
-@Description("Bob 的 description")
+@Description("作者类")
 public class Bob {
 
-    @Description("age 的 description")
+    @Description("id")
+    private Integer id;
+    @Description("年龄")
     private Integer age;
-    @Description("name 的 description")
+    @Description("名称")
     private String name;
-    @Description("weight 的 description")
+    @Description("体重")
     private String weight;
-    @Description("height 的 description")
+    @Description("身高")
     private String height;
-    @Description("length 的 description")
-    private Integer length;
 }

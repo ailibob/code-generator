@@ -9,6 +9,10 @@ import java.util.List;
 @Data
 public class CommandContext {
     /**
+     * 作者名称
+     */
+    private String userName;
+    /**
      * 属性集合
      */
     private List<Attribute> attributes;

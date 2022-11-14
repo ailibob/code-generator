@@ -32,6 +32,7 @@ public class ModelAnalysisExample {
         latest.put("userName", "Bob");
         latest.put("modelDesc", commandContext.getClassDescription());
         latest.put("ModelName", commandContext.getClassName());
+        latest.put("modelName", commandContext.getClassName().substring(0,1).toLowerCase() + commandContext.getClassName().substring(1));
         latest.put("attributes", commandContext.getAttributes());
         // freeMarker 自带时间函数用不明白..
         latest.put("date", new Date().toString());

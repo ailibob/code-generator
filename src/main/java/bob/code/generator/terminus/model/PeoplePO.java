@@ -1,4 +1,4 @@
-package bob.code.generator.terminus;
+package bob.code.generator.terminus.model;
 
 public class PeoplePO {
     private String name;

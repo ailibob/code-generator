@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
 * @author ${userName}
-* @date ${lastUpdated}
+* @date ${date}
 * description:
 **/
 @EqualsAndHashCode(callSuper = true)
@@ -23,7 +23,7 @@ public class ${ModelName}TO extends ApiBean {
     private static final long serialVersionUID = 1L;
 
     <#list attributes as i>
-        @ApiModelProperty("${i.dec}")
-        private ${i.type} ${i.name};
+    @ApiModelProperty("${i.description}")
+    private ${i.type} ${i.name};
     </#list>
 }
