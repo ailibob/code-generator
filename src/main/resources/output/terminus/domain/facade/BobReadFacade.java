@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 
 /**
 * @author Bob
-* @date Mon Nov 14 16:28:19 CST 2022
+* @date Mon Nov 14 17:15:29 CST 2022
 * description:
 **/
 @Api("作者类领域层读 Facade")

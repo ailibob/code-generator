@@ -4,12 +4,17 @@
 
 ## 内容
 1. 基于 freeMark 的功能生成代码模版 , 不依赖 Spring 相关
-2. 根据 PO 自动生成 TO、Repository、Manager、Service、Facade、Convert 分应用层、领域层
-3. 自动生成视图层 Controller、Action及相应的 Request、Response
-4. 可以根据指定属性生成相应的查询条件
-5. TO、Request、Response 属于模型对象, 其他Repository、Manager 属于业务功能，可声明不生成对应的业务功能
-6. 正向的一对多模型支持组装关系自动生成,但不支持关联模型的业务功能生成,如若需要,则在相关 PO 模型上添加注解
-7. **目前功能只适配 terminus 功能, 若其他同学希望使用 freeMark 写自己的 code generate 可参考 example**
+2. 根据 PO 自动生成 TO、Repository、Manager、Service、Facade、Convert 等领域层基础功能
+3. **目前功能只适配 terminus 功能, 若其他同学希望使用 freeMark 写自己的 code generate 可参考 example**
+4. 🚀🚀🚀🚀 欢迎提 mr 或者有新需要告诉作者
 
 ## 使用案例
 官方: http://freemarker.foofun.cn/
+### 模版类
+![img.png](img.png)
+### 生成效果
+![img_1.png](img_1.png)
+### 推荐使用方式
+1. 参考 bob.code.generator.example.model.Bob 写出自己的 PO 模型
+2. 执行 bob.code.generator.terminus.TerminusApplication
+3. 将 outPut 下的文件**复制**到公司项目目录结构 ( 解释: 生成的文件不含有包路径,复制过去后在点开文件 idea 会自动 set package 路径并自动引入其他类依赖, 当人需要提前打开 idea 的 autoImport )
